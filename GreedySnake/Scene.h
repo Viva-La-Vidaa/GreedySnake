@@ -7,8 +7,7 @@ public:
 	void Show_Map();
 	void Init_Map();
 	void Set_Map(int x, int y, char s);
-	void ShowScore(int score);
-	char game[N][N];
+	char game[N][M];
 };
 
 class Food

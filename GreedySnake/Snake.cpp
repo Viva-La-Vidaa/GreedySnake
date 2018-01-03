@@ -1,7 +1,5 @@
 #include "Scene.h"
-Snake::Snake()
-{
-};
+Snake snake;
 void Snake::Init()
 {
 	m_x[0] = 7; m_y[0] = 7;
@@ -10,6 +8,7 @@ void Snake::Init()
 	map.Set_Map(m_x[0], m_y[0], '@');
 	map.Set_Map(m_x[1], m_y[1], '*');
 }
+
 void Snake::move(char direction)
 {
 	int temp_x, temp_y;
@@ -74,7 +73,7 @@ bool Snake::is_EatSelf()
 
 bool Snake::is_HitGround()
 {
-	if (m_x[0] == 0 || m_x[0] == 19 || m_y[0] == 0 || m_y[0] == 29)
+	if (m_x[0] ==0|| m_x[0] == N-1|| m_y[0] == 0 || m_y[0] ==M-1)
 		return 1;
 	else
 		return 0;

@@ -1,11 +1,14 @@
 #ifndef _Snake_H_
 #define _Snake_H_
 #include "Scene.h"
-#define N 100
+const int N = 25,M =50;
+const int length =300;
 class Snake
 {
 public:
-	Snake();
+	int m_x[length];
+	int m_y[length];
+	int m_length;
 	void Init();
 	bool is_EatSelf();//是否吃掉自己
 	bool is_HitGround();//是否撞墙
@@ -13,10 +16,7 @@ public:
 	bool is_Direction(char dir);
 	void move(char direction);
 	void Show();
-private:
-	int m_x[N];
-	int m_y[N];
-	int m_length;
+    
 };
-
+extern Snake snake;
 #endif
