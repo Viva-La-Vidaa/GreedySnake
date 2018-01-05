@@ -16,7 +16,7 @@ public:
 	void ChangeDirection();
 	void move();
    private:
-	   char direction='w';
+	   char direction='w';//Ä¬ÈÏ·½Ïò
 };
 extern Snake snake;
 #endif

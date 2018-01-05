@@ -3,7 +3,6 @@
 #include<Windows.h>
 #include<time.h>
 #include "Scene.h"
-char dir = 'w';//默认方向,未输入时
 int score = 0;
 double speed;
 void gotoXY(int x, int y)
@@ -61,7 +60,7 @@ void Go()
 	}
 	map.Show_Map();
 	gotoXY(5, 63);
-	std::cout << "得分:" << score << std::endl;
+	std::cout << "得分:" << score << "分:" << std::endl;
 }
 
 void Init()//初始化函数
@@ -117,6 +116,7 @@ int main()
 	Welcome();
 	Select();
 	Init();
+
 	while (1)
 	{
 		double start = (double)clock() / CLOCKS_PER_SEC;
@@ -135,6 +135,7 @@ int main()
 		if (is_Dead())
 			exit(0);
 	}
+	
 	return 0;
 }
 
