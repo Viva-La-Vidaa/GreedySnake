@@ -1,8 +1,11 @@
 #include <conio.h>
 #include "Scene.h"
+Map map;//全局变量定义
+Food food;
 Snake snake;
 void Snake::Init()
 {
+	direction = 'w';//默认方向
 	m_x[0] = 7; m_y[0] = 7;
 	m_x[1] = 8; m_y[1] = 7;
 	m_length = 2;

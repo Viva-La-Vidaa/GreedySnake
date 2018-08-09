@@ -1,6 +1,6 @@
 #ifndef _Snake_H_
 #define _Snake_H_
-#include "Scene.h"
+
 const int N = 25,M =50;
 const int length =300;
 class Snake
@@ -16,7 +16,7 @@ public:
 	void ChangeDirection();
 	void move();
    private:
-	   char direction='w';//默认方向
+	   char direction;//默认方向
 };
-extern Snake snake;
+extern Snake snake;//全局变量声明
 #endif

@@ -1,10 +1,12 @@
+#include "Scene.h"
 #include<iostream>
 #include <conio.h>
 #include<Windows.h>
 #include<time.h>
-#include "Scene.h"
+
 int score = 0;
 double speed;
+
 void gotoXY(int x, int y)
 {
 	HANDLE hout;
@@ -65,6 +67,7 @@ void Go()
 
 void Init()//初始化函数
 {
+
 	_getch();
 	system("cls");
 	map.Init_Map();
@@ -79,7 +82,7 @@ void Select()
 	std::cout << "\n\n\n\t\t\t1.简单模式" << std::endl;
 	std::cout << "\n\n\n\t\t\t2.正常模式" << std::endl;
 	std::cout << "\n\n\n\t\t\t3.困难模式" << std::endl;
-	std::cout << "\n\n\n\t\t\t4.作死模式" << std::endl;
+	std::cout << "\n\n\n\t\t\t4.噩梦模式" << std::endl;
 	int hard;
 	int flag = 1;
 	while (flag)

@@ -1,12 +1,14 @@
-﻿生成启动时间为 2018/1/5 16:35:05。
+﻿生成启动时间为 2018/7/18 0:13:16。
      1>项目“C:\Users\Dd\documents\visual studio 2013\Projects\GreedySnake\GreedySnake\GreedySnake.vcxproj”在节点 2 上(Build 个目标)。
-     1>Link:
-         D:\C语言\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dd\documents\visual studio 2013\Projects\GreedySnake\Debug\GreedySnake.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Dd\documents\visual studio 2013\Projects\GreedySnake\Debug\GreedySnake.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Dd\documents\visual studio 2013\Projects\GreedySnake\Debug\GreedySnake.lib" /MACHINE:X86 Debug\main.obj
-         Debug\Scene.obj
-         Debug\Snake.obj
-         GreedySnake.vcxproj -> C:\Users\Dd\documents\visual studio 2013\Projects\GreedySnake\Debug\GreedySnake.exe
-     1>已完成生成项目“C:\Users\Dd\documents\visual studio 2013\Projects\GreedySnake\GreedySnake\GreedySnake.vcxproj”(Build 个目标)的操作。
+     1>ClCompile:
+         D:\C语言\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\dd\documents\visual studio 2013\projects\greedysnake\greedysnake\main.cpp(124): error C2065: “CLOCKS_PER_SEC”: 未声明的标识符
+     1>c:\users\dd\documents\visual studio 2013\projects\greedysnake\greedysnake\main.cpp(124): error C3861: “clock”:  找不到标识符
+     1>c:\users\dd\documents\visual studio 2013\projects\greedysnake\greedysnake\main.cpp(127): error C2065: “CLOCKS_PER_SEC”: 未声明的标识符
+     1>c:\users\dd\documents\visual studio 2013\projects\greedysnake\greedysnake\main.cpp(127): error C3861: “clock”:  找不到标识符
+     1>已完成生成项目“C:\Users\Dd\documents\visual studio 2013\Projects\GreedySnake\GreedySnake\GreedySnake.vcxproj”(Build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:00.27
+已用时间 00:00:00.86

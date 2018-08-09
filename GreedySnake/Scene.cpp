@@ -1,10 +1,10 @@
+#include "Scene.h"
 #include<iostream>
 #include <stdlib.h>
 #include <ctime>
 #include<Windows.h>
-#include "Scene.h"
-Map map;
-Food food;
+
+
 void Map::Init_Map()
 {
 	int i, j;
